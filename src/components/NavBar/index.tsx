@@ -137,14 +137,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
               <PageTabs />
             </Row>
           </Box>
-          <Box
-            className={styles.searchContainer}
-            {...(isNavSearchInputVisible && {
-              display: 'flex',
-            })}
-          >
-            <SearchBar />
-          </Box>
+    
           <Box className={styles.rightSideContainer}>
             <Row gap="12">
               <Box position="relative" display={isNavSearchInputVisible ? 'none' : { sm: 'flex' }}>
